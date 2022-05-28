@@ -1,7 +1,7 @@
 # lock-free
 
 Необходимо реализовать в lock-free стиле следующий интерфейс:
-'''
+```
 /**
  * Lock-Free множество.
  * @param <T> Тип ключей
@@ -56,7 +56,7 @@ public interface Set<T extends Comparable<T>> {
      */
     java.util.Iterator<T> iterator();
 }
-'''
+```
 
 Дополнительные требования:
 
@@ -67,10 +67,3 @@ public interface Set<T extends Comparable<T>> {
         Тесты корректности на основе lincheck
     В реализации не предполагается увидеть стандартные контейнеры из java.util.concurrent
     Реализация итератора - бонусное задание. Может базироваться на дизайне, предложенном в http://www.cs.technion.ac.il/~erez/Papers/iterators-disc13.pdf.
-
-Порядок сдачи работ:
-
-    Вы регистрируетесь в классе по ссылке https://classroom.github.com/a/qzZ5IOK7, при этом автоматически создается репозиторий для решения
-    Создаете новую ветку в репозитории, например dev
-    Делаете pull request на merge вашей ветки dev в master
-    При возникновении любых вопросов не стесняйтесь нам писать в Slack либо на почту
